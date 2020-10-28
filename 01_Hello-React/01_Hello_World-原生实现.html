@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h2 class="title">Hello World!!!</h2>
+  <button class="btn">改变文本</button>
+  <script>
+    //1.定义文本
+    let message = "Hello React!!!"
+    //2.将数据显示在H2元素中
+    const titleEl = document.getElementsByClassName('title')[0];
+    // titleEl.innerHTML = message;
+    //3.点击按钮 界面数据发生改变
+    const btnEl = document.getElementsByClassName("btn")[0];
+    btnEl.addEventListener('click', () => {
+      titleEl.innerHTML = message;
+    })
+  </script>
+</body>
+</html>
