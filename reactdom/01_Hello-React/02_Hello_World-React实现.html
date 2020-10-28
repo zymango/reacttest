@@ -17,7 +17,9 @@
      <!-- 开始开发 -->
     <!-- 注意：使用jsx， 并且希望script中的jsx代码被解析，必须在script标签中添加一个属性-->
     <script type="text/babel">
-      ReactDOM.render(<h2>Hello World</h2>, document.getElementById("app"))
+
+      let message = "Hello World!!!"
+      ReactDOM.render(<h2>{message}</h2>, document.getElementById("app"))
     </script>
 </body>
 </html>
